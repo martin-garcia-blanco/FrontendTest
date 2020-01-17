@@ -1,0 +1,47 @@
+@import  config
+    
+.main
+    display: flex
+    flex-direction: column
+    width: 90%
+    padding-top: 1rem
+    .user
+        display: flex
+        &__image
+            width: 64px
+            height: 64px
+            object-fit: cover
+            border-radius: .2rem
+            margin-right: .5rem
+        &__info
+            .info__username
+                font-size: .9rem
+                font-style: italic
+            .info__name
+                font-weight: bolder
+                font-size: 1.7rem
+            .info__bio
+                font-size: .9rem
+    .repos
+        margin-top: 1rem
+        &__title
+                font-size: 1.1rem
+                border-bottom: solid $greyColor
+                padding-bottom: .5rem
+        &__list 
+            list-style: none
+            margin: 0
+            padding: 0
+            .element
+                display: flex
+                justify-content: space-between
+                padding: .5rem 1rem
+                border-bottom: solid thin $greyColor
+                &__title
+                    font-size: 1rem
+                &__details
+                    display: flex
+                    align-items: center
+                    & > *
+                        margin-left: .5rem
+                        font-size: .7rem
