@@ -14,10 +14,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.hide {
-  display: none;
-}
-
 @media screen and (min-width: 600px) {
   body {
     min-width: 550px;
@@ -138,6 +134,20 @@ button, input {
 .main .repos__list .element__details > * {
   margin-left: 0.5rem;
   font-size: 0.7rem;
+}
+
+.details__star {
+  width: 14px;
+  height: 16px;
+}
+
+.details__fork-icon {
+  width: 10px;
+  height: 16px;
+}
+
+.hide {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */
