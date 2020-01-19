@@ -51,9 +51,9 @@ button, input {
   border: solid thin #a19898;
   border-radius: 0.2rem;
   padding: 0.1rem 0.5rem;
-  height: 1.6rem;
+  height: 2.5rem;
   width: 80%;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .nav .form__search:focus {
   box-shadow: 0px 0px 3px 1px #60A7EB;
@@ -61,11 +61,11 @@ button, input {
 .nav .form__button {
   border: solid thin #a19898;
   border-radius: 0.2rem;
-  height: 1.6rem;
+  height: 2.5rem;
   font-weight: bold;
   background-color: #e7e7e7;
-  font-size: 0.7rem;
-  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  padding: 0rem 1rem;
 }
 .nav .form__button:active {
   box-shadow: 0px 0px 3px 1px #60A7EB;
@@ -74,7 +74,9 @@ button, input {
   background-color: #F9DEDE;
   border: solid thin #CFB2B1;
   border-radius: 0.2rem;
-  padding: 0.5rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: #920F07;
 }
 
@@ -88,28 +90,28 @@ button, input {
   display: flex;
 }
 .main .user__image {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 0.2rem;
   margin-right: 0.5rem;
 }
 .main .user__info .info__username {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-style: italic;
 }
 .main .user__info .info__name {
   font-weight: bolder;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
 }
 .main .user__info .info__bio {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 .main .repos {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .main .repos__title {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   border-bottom: solid #a19898;
   padding-bottom: 0.5rem;
 }
@@ -121,11 +123,11 @@ button, input {
 .main .repos__list .element {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   border-bottom: solid thin #a19898;
 }
 .main .repos__list .element__title {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
 }
 .main .repos__list .element__details {
   display: flex;
@@ -134,17 +136,17 @@ button, input {
 }
 .main .repos__list .element__details > * {
   margin-left: 0.5rem;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .details__star {
-  width: 14px;
-  height: 16px;
+  width: 17px;
+  height: 20px;
 }
 
 .details__fork-icon {
-  width: 10px;
-  height: 16px;
+  width: 13px;
+  height: 20px;
 }
 
 .hide {
