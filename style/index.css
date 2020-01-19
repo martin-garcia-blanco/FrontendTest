@@ -88,8 +88,8 @@ button, input {
   display: flex;
 }
 .main .user__image {
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 0.2rem;
   margin-right: 0.5rem;
@@ -125,11 +125,12 @@ button, input {
   border-bottom: solid thin #a19898;
 }
 .main .repos__list .element__title {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .main .repos__list .element__details {
   display: flex;
   align-items: center;
+  width: 20%;
 }
 .main .repos__list .element__details > * {
   margin-left: 0.5rem;
