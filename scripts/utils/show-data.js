@@ -6,7 +6,7 @@ const showData = (data) => {
     const bio = document.getElementsByClassName('info__bio')[0]
     const image = document.getElementsByClassName('user__image')[0]
 
-    userName.textContent = user.username
+    userName.textContent = `@${user.username}`
     name.textContent = user.name
     bio.textContent = user.bio
     image.src = user.image
@@ -28,14 +28,14 @@ const showData = (data) => {
         details.classList.add('element__details', 'details')  
         
         const starIcon = document.createElement('i')
-        starIcon.classList.add('fas', 'fa-star')
+        starIcon.classList.add('fas', 'fa-star', 'details__star')
         
         const starNumber = document.createElement('p')
         starNumber.classList.add('details__fork-number')
         starNumber.innerText =repo.stargazers_count
         
         const forkIcon = document.createElement('i')
-        forkIcon.classList.add('fas', 'fa-code-branch')
+        forkIcon.classList.add('fas', 'fa-code-branch', 'details__fork-icon')
         
         const forkNumber = document.createElement('p')
         forkNumber.innerText =repo.forks_count
