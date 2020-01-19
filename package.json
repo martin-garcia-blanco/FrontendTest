@@ -1,0 +1,29 @@
+{
+    "name": "searcher-github",
+    "version": "1.0.0",
+    "description": "Little technical test for a company",
+    "main": "index.html",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/martin-garcia-blanco/FrontendTest.git"
+    },
+    "keywords": [
+        "github",
+        "repositories"
+    ],
+    "author": "Martin Garcia Blanco",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/martin-garcia-blanco/FrontendTest/issues"
+    },
+    "homepage": "https://github.com/martin-garcia-blanco/FrontendTest#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-favicon": "^2.0.1",
+        "path": "^0.12.7"
+    }
+}
