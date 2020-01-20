@@ -15,6 +15,9 @@ describe('logic retrieve-user-repos', () => {
         expect(data.user.bio).toBeDefined()
         expect(data.user.bio.length).toBeGreaterThan(0)
 
+        expect(data.user.image).toBeDefined()
+        expect(data.user.image.length).toBeGreaterThan(0)
+
         expect(data.repos).toBeDefined()
         expect(data.repos).toBeInstanceOf(Array)
 
@@ -31,8 +34,9 @@ describe('logic retrieve-user-repos', () => {
         try{
             await retrieveUserRepos(wrongUser)
             throw Error('Should not reach this point')
-        } catch({message}){
-            expect(message).toBe('Not found')
+        } catch(error){
+            expect(error).toBeInstanceOf(NotFoundError)
+            expect(error.message).toBe('Does not found')
         }
     })
 
@@ -40,8 +44,9 @@ describe('logic retrieve-user-repos', () => {
        const emptyUsername = 2
        try{
             await retrieveUserRepos(emptyUsername)
-       }catch({message}) {
-           expect(message).toBe('input is empty or blank')
+       }catch(error) {
+           expect(error).toBeInstanceOf(ContentError)
+           expect(error.message).toBe('input is empty or blank')
        }
     })
 
@@ -49,9 +54,10 @@ describe('logic retrieve-user-repos', () => {
         const emptyUsername = ''
         try{
              await retrieveUserRepos(emptyUsername)
-        }catch({message}) {
-            expect(message).toBe('input is empty or blank')
-        }
+            }catch(error) {
+                expect(error).toBeInstanceOf(ContentError)
+                expect(error.message).toBe('input is empty or blank')
+            }
      })
 })
 
