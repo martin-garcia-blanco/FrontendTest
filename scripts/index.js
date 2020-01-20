@@ -4,11 +4,6 @@ const form = document.getElementsByClassName('form')[0]
 const feedback = document.getElementsByClassName('feedback')[0]
 const userInformation = document.getElementsByClassName('main')[0]
 
-/* const NOT_FOUND_ERROR_MESSAGE = 'Does not found'
-const EMPTY_INPUT_ERROR_MESSAGE = 'input is empty or blank'
-const UNKNOWN_ERROR_MESSAGE = 'Sorry, try again later' */
-
-
 const onSearch = async (event) => {
     event.preventDefault()
     const { username: { value: username } } = event.target
