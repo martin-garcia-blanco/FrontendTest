@@ -11,7 +11,6 @@ const onSearch = async (event) => {
     hideElement(feedback)
     hideElement(userInformation)
 
-
     try {
         const result = await retrieveUserRepos(username)
         showData(result, userInformation)
