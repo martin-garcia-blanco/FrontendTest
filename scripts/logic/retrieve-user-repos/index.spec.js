@@ -5,7 +5,7 @@ describe('logic retrieve-user-repos', () => {
     it('should retrieve an user and his repos', async () => {
         const user = 'martin-garcia-blanco'
         const data = await retrieveUserRepos(user)
-
+        console.log(data)
         expect(data.user.username).toBeDefined()
         expect(data.user.username.length).toBeGreaterThan(0)
 
