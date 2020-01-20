@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Front end test!</title>
+    <script src="https://kit.fontawesome.com/12f9d6a4c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta id="viewport" name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <form class="form">
+            <input type="search" name="username" class="form__search">
+            <button class="form__button">Search</button>
+        </form>
+        <p class="feedback ">Does not exist</p>
+    </nav>
+
+    <main class="main ">
+        <section class="user">
+            <img src="https://dummyimage.com/200x200/000/fff" alt="profile" class="user__image">
+            <div class="user__info info">
+                <p class="info__username">@username</p>
+                <h1 class="info__name">Full Name</h1>
+                <p class="info__bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, nobis atque repellat quis id earum suscipit corrupti </p>
+            </div>
+        </section>
+
+        <section class="repos">
+            <h2 class="repos__title">Repositories</h2>
+            <ul class="repos__list list">
+                <li class="list__element element">
+                    <h3 class="element__title">canvas-board</h3>
+                    <div class="element__details details"><i class="fas fa-star"></i>
+                        <p class="details__fork-number">0</p><i class="fas fa-code-branch"></i>
+                        <p class="details__fork-number">0</p>
+                    </div>
+                </li>
+                <li class="list__element element">
+                    <h3 class="element__title">ff-productions</h3>
+                    <div class="element__details details"><i class="fas fa-star"></i>
+                        <p class="details__fork-number">0</p><i class="fas fa-code-branch"></i>
+                        <p class="details__fork-number">0</p>
+                    </div>
+                </li>
+                <li class="list__element element">
+                    <h3 class="element__title">FrontendTest</h3>
+                    <div class="element__details details"><i class="fas fa-star"></i>
+                        <p class="details__fork-number">0</p><i class="fas fa-code-branch"></i>
+                        <p class="details__fork-number">0</p>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+
+
+    </main>
+    <script src="./scripts/logic/retrieve-user-repos/index.js"></script>
+    <script src="./scripts/utils/call.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

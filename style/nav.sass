@@ -1,0 +1,48 @@
+@import config
+
+button, input 
+    background: none
+    color: inherit
+    border: none
+    padding: 0
+    font: inherit
+    cursor: pointer
+    outline: inherit
+
+.nav
+    width: 90%
+    .form
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-bottom: .5rem
+        &__search
+            border: solid thin #a19898
+            border-radius: 0.2rem
+            padding: 0.1rem 0.5rem
+            height: 2.5rem
+            width: 80%
+            font-size: 1rem
+        &__search:focus
+            box-shadow: 0px 0px 3px 1px $searchShadowColor
+        &__button
+            border: solid thin #a19898
+            border-radius: 0.2rem
+            height: 2.5rem
+            font-weight: bold
+            background-color: #e7e7e7
+            font-size: 1rem
+            padding: 0rem 1rem
+        &__button:active
+            
+            box-shadow: 0px 0px 3px 1px $searchShadowColor
+            
+
+    .feedback
+        background-color: #F9DEDE
+        border: solid thin #CFB2B1
+        border-radius: 0.2rem
+        padding: 1rem
+        font-size: 1.3rem
+        font-weight: 600
+        color: #920F07
