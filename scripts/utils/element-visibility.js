@@ -1,3 +1,5 @@
+'use strict'
+
 const showElement = (element) => {
     element.classList.remove('hide')
 }
