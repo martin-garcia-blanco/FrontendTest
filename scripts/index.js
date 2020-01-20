@@ -4,6 +4,9 @@ const form = document.getElementsByClassName('form')[0]
 const feedback = document.getElementsByClassName('feedback')[0]
 const userInformation = document.getElementsByClassName('main')[0]
 
+/* const NOT_FOUND_ERROR_MESSAGE = 'Does not found'
+const EMPTY_INPUT_ERROR_MESSAGE = 'input is empty or blank'
+const UNKNOWN_ERROR_MESSAGE = 'Sorry, try again later' */
 
 
 const onSearch = async (event) => {
@@ -17,9 +20,11 @@ const onSearch = async (event) => {
     try {
         const result = await retrieveUserRepos(username)
         showData(result, userInformation)
-
-    } catch ({ message }) {
-        feedback.textContent = message
+    } catch (error) {
+        if (error instanceof NotFoundError) feedback.textContent = NOT_FOUND_ERROR_MESSAGE
+        else if (error instanceof ContentError) feedback.textContent = EMPTY_INPUT_ERROR_MESSAGE
+        else feedback.textContent = UNKNOWN_ERROR_MESSAGE
+        
         showElement(feedback)
     }
 }
