@@ -1,3 +1,5 @@
+'use strict'
+
 const showData = (data) => {
     const { user, repos } = data
 
